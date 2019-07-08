@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+    <style type="text/css">
+        .important { color: white; }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <h1>Login</h1>
+    <form action="/home" method="get">
+        Username: <input type="text" name="name" value="">
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+{% endblock %}
+
+{% block footer %}
+    <p class="important">This is my awesome homepage.</p>
+{% endblock %}

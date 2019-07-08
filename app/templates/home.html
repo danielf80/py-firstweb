@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+    <style type="text/css">
+        .important { color: white; }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <h1>Hello</h1>
+    {% if name %}{{ name }} {% endif %}
+{% endblock %}
+
+{% block footer %}
+    <p class="important">This is my awesome homepage.</p>
+{% endblock %}

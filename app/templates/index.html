@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+    <meta http-equiv="Refresh" content="5; url={{ request.url_root }}login" />
+{% endblock %}
+
+{% block content %}
+    <h1>Request Path: {{ request.url_root }}</h1>
+{% endblock %}
